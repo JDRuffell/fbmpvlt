@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Marketplace Viewed Listing Tracker",
+  "version": "1.0",
+  "description": "Keeps track of viewed facebook marketplace listing by visually annotating listings.",
+  "permissions": [],
+  "host_permissions": [
+    "https://www.facebook.com/marketplace/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/marketplace/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "icons": { },
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fbmpvlt@johninatoooor.com",
+      "strict_min_version": "58.0"
+    }
+  }
+}
